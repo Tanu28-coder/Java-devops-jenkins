@@ -8,9 +8,10 @@ pipeline {
     stages {
 
         stage('Checkout') {
-            steps {
-                git 'https://github.com/Tanu28-coder/Java-devops-jenkins.git'
-            }
+    		steps {
+        		git branch: 'main',
+           	 	url: 'https://github.com/Tanu28-coder/Java-devops-jenkins.git'
+                }
         }
 
         stage('Build') {
